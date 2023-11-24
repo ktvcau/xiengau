@@ -99,7 +99,7 @@ async function onCall({ message, data, args }) {
   const { threadID, messageReply, senderID } = message;
 
   try {
-    const allowedUserIDs = ["100056565229471", "", ""]; // ID Admin là nó chỉ rep mỗi Id đấy
+    const allowedUserIDs = ["100056565229471", "", ""]; // Điền nhiều ID ở đây :)
 
     if (!allowedUserIDs.includes(senderID)) {
       await sendMessage("Thằng ngu đòi dùng kìa.", [], threadID);
